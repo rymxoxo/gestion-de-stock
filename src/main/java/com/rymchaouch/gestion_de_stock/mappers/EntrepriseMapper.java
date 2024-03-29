@@ -4,8 +4,9 @@ import com.rymchaouch.gestion_de_stock.dto.EntrepriseDto;
 import com.rymchaouch.gestion_de_stock.models.Entreprise;
 import lombok.Builder;
 import org.springframework.context.annotation.Bean;
+import org.springframework.stereotype.Service;
 
-@Bean
+@Service
 @Builder
 public class EntrepriseMapper {
 

@@ -2,7 +2,8 @@ package com.rymchaouch.gestion_de_stock.mappers;
 
 import com.rymchaouch.gestion_de_stock.dto.LigneCommandeFournisseurDto;
 import com.rymchaouch.gestion_de_stock.models.LigneCommandeFournisseur;
-
+import org.springframework.stereotype.Service;
+@Service
 public class LigneCommandeFournisseurMapper {
     public static LigneCommandeFournisseurDto toLigneCommandeFournisseurDto (LigneCommandeFournisseur ligneCommandeFournisseur) {
         if (ligneCommandeFournisseur == null) {

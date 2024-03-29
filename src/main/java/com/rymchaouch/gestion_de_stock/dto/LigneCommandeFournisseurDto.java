@@ -12,8 +12,6 @@ public record LigneCommandeFournisseurDto(
         BigDecimal quantite,
         Integer idEntreprise,
 
-
-
         BigDecimal prixUnitaire
 ) {
 }

@@ -4,9 +4,11 @@ import com.rymchaouch.gestion_de_stock.dto.CommandeClientDto;
 import com.rymchaouch.gestion_de_stock.dto.CommandeFournisseurDto;
 import com.rymchaouch.gestion_de_stock.models.CommandeClient;
 import com.rymchaouch.gestion_de_stock.models.CommandeFournisseur;
+import org.springframework.stereotype.Service;
 
+@Service
 public class CommandeFournisseurMapper {
-        public CommandeFournisseurDto toCommandeFournisseurDto(CommandeFournisseur commandeFournisseur){
+        public static CommandeFournisseurDto toCommandeFournisseurDto(CommandeFournisseur commandeFournisseur){
             if (commandeFournisseur ==null){
                 throw  new NullPointerException("commandeFournisseur does Not exist") ;
             }
