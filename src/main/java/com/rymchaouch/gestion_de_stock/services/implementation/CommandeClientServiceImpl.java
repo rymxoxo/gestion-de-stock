@@ -5,10 +5,7 @@ import com.rymchaouch.gestion_de_stock.exceptions.EntityNotFoundException;
 import com.rymchaouch.gestion_de_stock.exceptions.ErrorCodes;
 import com.rymchaouch.gestion_de_stock.exceptions.InvalidEntityException;
 import com.rymchaouch.gestion_de_stock.mappers.CommandeClientMapper;
-<<<<<<< HEAD
-import com.rymchaouch.gestion_de_stock.mappers.CommandeFournisseurMapper;
-=======
->>>>>>> 470bf12 (finishing part of controllers , services and services impl)
+
 import com.rymchaouch.gestion_de_stock.mappers.LigneCommandeClientMapper;
 import com.rymchaouch.gestion_de_stock.models.Article;
 import com.rymchaouch.gestion_de_stock.models.Client;
@@ -72,11 +69,8 @@ public class CommandeClientServiceImpl implements CommandeClientService {
 
                         Optional<Article> article = articleRepository.findById(ligneCommandeClientDto.article().id());
                         if (article.isEmpty()) {
-<<<<<<< HEAD
                             articleErrors.add("L'article avec l'ID " + ligneCommandeClientDto.article().id() + " n'existe pas");
-=======
                                 articleErrors.add("L'article avec l'ID " + ligneCommandeClientDto.article().id() + " n'existe pas");
->>>>>>> 470bf12 (finishing part of controllers , services and services impl)
                         }
                     }
                     else {
