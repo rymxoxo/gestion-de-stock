@@ -9,3 +9,11 @@ spring:
     hibernate:
       ddl-auto: update
     database: postgresql
+
+flickr:
+  apiKey: bcc30fed0dbe316b419dc66c4a5b41a8
+  apiSecret: a35e61ae73384b76
+  appKey: 72157720913483432-1f3add929b84c131
+  appSecret: 53125980fc932be8
+
+
